@@ -32,11 +32,11 @@ h1{
         weidth: 2px 5px;}
 }
 @media screen (min-width:800px) and (max-width:900px){
-    img{
+   figure img{
         display:none;}
 }
 @media screen (min-width:200px) and (max-width:400px){
-    img{
+    figure img{
         height:400px;
         object-fit: cover;}
 }
