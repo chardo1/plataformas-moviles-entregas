@@ -1,19 +1,19 @@
-@media screen and (min-width: 400px){
+@media (min-width: 400px){
 body {
     background-color: rgb(40,60,80);
 }
 }
-@media screen and (max-width: 800px){
+@media (max-width: 800px){
 h1{
     text-align: center;
 }
 }
-@media screen and (operation:landscape){
+@media (operation:landscape){
     article{
         max-width: 50ch;
     }
 }
-@media screen and (min-height: 201px){
+@media (min-height: 201px){
     h1{
         background-color: red;}
 }
