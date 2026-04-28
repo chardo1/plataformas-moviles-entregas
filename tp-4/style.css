@@ -26,19 +26,23 @@ h1{
         color:#111;
         background-color:#DDD;
     }
+}
 @media screen and (hover:none) and (pointer:coarse){
     a{
         background-color:#212;
-        weidth: 2px 5px;}
+        weidth: 2px 5px;
+    }
 }
 @media screen and (min-width:800px) and (max-width:900px){
-   figure, img{
-        display:none;}
+  img{
+        display:none;
+  }
 }
 @media screen and (min-width:200px) and (max-width:400px){
-    figure, img{
+   img{
         height:400px;
-        object-fit: cover;}
+        object-fit: cover;
+   }
 }
 @media (min-resolution: 2.1dppx) {
   article {
