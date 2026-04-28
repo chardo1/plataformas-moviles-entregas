@@ -22,8 +22,8 @@ h1{
         font-style: serif;}
 }
 @media (prefers-color-scheme: light) {
-    body, h1{
-        text-color:#111;
+    body,h1{
+        color:#111;
         background-color:#DDD;
     }
 @media screen and (hover:none) and (pointer:coarse){
