@@ -85,11 +85,10 @@ console.log(esPar(0)); // true
 console.log(esPar(-2)); // true
 
 
-// 8- Implementar una función "esPositivo" que reciba un número y devuelva true si el número es positivo, o false si es negativo o cero
-// ejemplo: esPositivo(4) retorna true, esPositivo(-3) retorna false
-function esPositivo (a){
-    return 
+function esPositivo(num) {
+    return num>0;
 }
+
 console.log("Resultados de esPositivo():")
 console.log(esPositivo(4)); // true
 console.log(esPositivo(-3)); // false
@@ -98,6 +97,24 @@ console.log(esPositivo(0)); // false
 // 9- Implementar una función "clasificarNumero" que reciba un número y retorne un mensaje indicando si el número es par o impar, y si es positivo o negativo
 // ejemplo: clasificarNumero(4) retorna "El número 4 es par y positivo."
 // ejemplo: clasificarNumero(-3) retorna "El número -3 es impar y negativo."
+
+function clasificarNumero(num) {
+  let clasificado;
+  
+  if (num>0){
+    clasificado="Positivo ";
+  }else{
+    clasificado="Negativo ";
+  }
+  
+  if (num%2==0){
+    clasificado+="par";
+  }else{
+    clasificado+="impar";
+  }
+  
+  return clasificado;
+}
 
 console.log("Resultados de clasificarNumero():")
 console.log(clasificarNumero(4)); // "El número 4 es par y positivo."
@@ -109,6 +126,10 @@ console.log(clasificarNumero(0)); // "El número 0 es par y no positivo."
 // 10- Implementar una función "transformarMayuscula" que transforme a mayúscula la cadena de caracteres recibida como parámetro
 // ejemplo: transformarMayuscula("Plataformas Móviles") retorna "PLATAFORMAS MÓVILES"
 
+function transformarMayuscula(text) {
+    return text.toUpperCase();
+}
+
 console.log("Resultados de transformarMayuscula():")
 console.log(transformarMayuscula("Plataformas Móviles"))
 console.log(transformarMayuscula("hola mundo"))
@@ -117,6 +138,10 @@ console.log(transformarMayuscula("abc"))
 
 // 11- Implementar una función "primeraLetra" que nos devuelva la inicial de la cadena de caracteres recibida como parámetro
 // ejemplo: primeraLetra("Plataformas") retorna "P"
+
+function primeraLetra(word) {
+    return word.charAt(0);
+}
 
 console.log("Resultados de primeraLetra():")
 console.log(primeraLetra("Plataformas Móviles"))
@@ -127,6 +152,10 @@ console.log(primeraLetra("abc"))
 // 12- Implementar una función "sinPrimeraLetra" que nos devuelva la cadena de caracteres recibida como parámetro sin la primera letra
 // ejemplo: sinPrimeraLetra("Plataformas") retorna "lataformas"
 
+function sinPrimeraLetra(word) {
+    return word.slice(1);
+}
+
 console.log("Resultados de sinPrimeraLetra():")
 console.log(sinPrimeraLetra("Plataformas Móviles"))
 console.log(sinPrimeraLetra("hola mundo"))
@@ -135,6 +164,10 @@ console.log(sinPrimeraLetra("abc"))
 
 // 13- Implementar una función "primeraLetraMayuscula" que devuelve la cadena de caracteres recibida, pero  con su primera letra en mayúscula
 // ejemplo: primeraLetraMayuscula("plataformas") retorna "Plataformas"
+
+function primeraLetraMayuscula(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+}
 
 console.log("Resultados de primeraLetraMayuscula():")
 console.log(primeraLetraMayuscula("plataformas móviles"))
@@ -145,6 +178,10 @@ console.log(primeraLetraMayuscula("abc"))
 // 14- Implementar una función "terminaCon" que devuelve verdadero o falso si la palabra termina con la terminación recibida
 // ejemplo: terminaCon("plataformas", "mas") retorna true
 
+function terminaCon(word, end) {
+    return word.endsWith(end,end.len);
+}
+
 console.log("Resultados de terminaCon():")
 console.log(terminaCon("hola", "a")); // true
 console.log(terminaCon("hola", "o")); // false
@@ -154,10 +191,18 @@ console.log(terminaCon("plataformas", "más")); // false
 // 15- Implementar una función "palabraInvertida" que devuelva la palabra invertida
 // ejemplo: palabraInvertida("hola") retorna "aloh";
 
+function palabraInvertida(word) {
+  let back = word.split("").reverse().join("");  
+  return back;
+}
 console.log("Resultados de palabraInvertida():")
 console.log(palabraInvertida("plataformas móviles"))
 console.log(palabraInvertida("hola mundo"))
 console.log(palabraInvertida("abc"))
+
+</script>
+</body>
+</html>
 
 </script>
 </body>
