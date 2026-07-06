@@ -8,18 +8,20 @@ h1{
     text-align: center;
 }
 }
-@media (operation:landscape){
-    article{
-        max-width: 50ch;
-    }
+@media (orientation: landscape) {
+  article {
+    max-width: 50ch;
+  }
 }
-@media (min-height: 201px){
+@media (min-height: 200px){
     h1{
-        background-color: red;}
+        background-color: #560;
+    }
 }
 @media print{
     p{
-        font-style: serif;}
+        font-family: serif;
+    }
 }
 @media (prefers-color-scheme: light) {
     body,h1{
