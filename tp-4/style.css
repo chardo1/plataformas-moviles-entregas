@@ -1,19 +1,19 @@
-@media (min-width: 400px){
+@media screen and (min-width: 400px){
 body {
     background-color: rgb(40,60,80);
 }
 }
-@media (max-width: 800px){
+@media screen and (max-width: 800px){
 h1{
     text-align: center;
 }
 }
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
   article {
     max-width: 50ch;
   }
 }
-@media (min-height: 200px){
+@media screen and (min-height: 200px){
     h1{
         background-color: #560;
     }
@@ -47,7 +47,7 @@ h1{
         object-fit: cover;
    }
 }
-@media (min-resolution: 2.1dppx) {
+@media screen and (min-resolution: 2.1dppx) {
   article {
     background-color: #667;
 }
