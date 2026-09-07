@@ -1,6 +1,5 @@
 var listaNumerosEjemplo = [2,4,6,-1,5,-4,0];
 
-
 /**
  * 01 - invertirLista
  * 
@@ -14,7 +13,8 @@ var listaNumerosEjemplo = [2,4,6,-1,5,-4,0];
  * - invertirLista([2,3,4]) retorna [4,3,2]
  */
 function invertirLista(listaDeNumeros) {
-    //
+    //.slice() para hacer una "shallow copy" de la lista y .reverse() para invertirla sin modificar la original [1]
+    return listaDeNumeros.slice().reverse();
 }
 console.log("invertirLista([2,3,4]): ", invertirLista([2,3,4]))
 
@@ -32,7 +32,8 @@ console.log("invertirLista([2,3,4]): ", invertirLista([2,3,4]))
  * - sumarLista([2,3,4]) retorna 9
  */
 function sumarLista(listaDeNumeros) {
-    //
+    // .reduce() recorre la lista y acumula la suma de los elementos [1]
+    return listaDeNumeros.reduce((acumulador, actual) => acumulador + actual, 0);
 }
 console.log("sumarLista([2,3,4]): ", sumarLista([2,3,4]))
 
@@ -48,11 +49,11 @@ console.log("sumarLista([2,3,4]): ", sumarLista([2,3,4]))
  * 
  * Ejemplos:
  * - contarElementosLista([2,3,4]) retorna 3
- * - contarElementosLista([2,3]) retorna 2
+ * - contarElementosLista([2, 3]) retorna 2
  * - contarElementosLista([]) retorna 0
  */
 function contarElementosLista(listaDeNumeros) {
-    //
+    return listaDeNumeros.length;
 }
 console.log("contarElementosLista([2,3,4]): ", contarElementosLista([2,3,4]))
 
