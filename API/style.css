@@ -1,0 +1,58 @@
+:root {
+    --lol-oro: #c8aa6e;
+    --lol-fondo: #0a1428;
+    --lol-panel: #0f1f3a;
+}
+
+body {
+    background-color: var(--lol-fondo);
+}
+
+.navbar,
+footer {
+    background-color: var(--lol-panel);
+    border-color: rgba(200, 170, 110, 0.3) !important;
+}
+
+h1,
+.navbar-brand,
+.card-title {
+    color: var(--lol-oro);
+}
+
+.carta {
+    background-color: var(--lol-panel);
+    border: 1px solid rgba(200, 170, 110, 0.25);
+    height: 100%;
+}
+
+.carta img {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: top;
+}
+
+.carta .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.btn-outline-warning {
+    --bs-btn-color: var(--lol-oro);
+    --bs-btn-border-color: var(--lol-oro);
+    --bs-btn-hover-bg: var(--lol-oro);
+    --bs-btn-hover-border-color: var(--lol-oro);
+    --bs-btn-hover-color: #0a1428;
+    --bs-btn-active-bg: var(--lol-oro);
+    --bs-btn-active-border-color: var(--lol-oro);
+    --bs-btn-active-color: #0a1428;
+}
+
+.modal-content {
+    background-color: var(--lol-panel);
+    border: 1px solid rgba(200, 170, 110, 0.4);
+}
+
+.modal-title {
+    color: var(--lol-oro);
+}
